@@ -1,5 +1,4 @@
-// src/routes/index.tsx
-import { component$, useSignal, useTask$, useVisibleTask$, $ } from "@builder.io/qwik";
+import { component$, useSignal, useVisibleTask$, $ } from "@builder.io/qwik";
 import { isBrowser } from "@builder.io/qwik/build";
 
 export default component$(() => {
@@ -130,8 +129,9 @@ export default component$(() => {
       if (!depthContainer.value) return;
       const canvas = depthContainer.value;
       const ctx = canvas.getContext("2d")!;
-      const width = canvas.clientWidth * devicePixelRatio;
-      const height = 640 * devicePixelRatio;
+      const dpr = window.devicePixelRatio || 1;
+      const width = canvas.clientWidth * dpr;
+      const height = 640 * dpr;
       canvas.width = width;
       canvas.height = height;
 
