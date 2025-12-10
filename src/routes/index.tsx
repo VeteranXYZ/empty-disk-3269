@@ -5,7 +5,8 @@ export default component$(() => {
   return (
     <div class="min-h-screen bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 text-white flex items-center justify-center">
       <div class="text-center p-10">
-        <h1 class="text-6xl md:text-8xl font-bold mb-4 animate-fade-in">
+<h1 class="text-6xl md:text-8xl font-bold mb-4">
+
           Hi, 我是 [你的名字]
         </h1>
         <p class="text-2xl md:text-4xl opacity-90 mb-8">
