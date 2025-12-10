@@ -1,0 +1,8 @@
+{
+  "name": "qwik-template",
+  "installCommand": "npm install",
+  "assets": {
+    "directory": "./dist",
+    "notFoundStrategy": "404Page"
+  }
+}
